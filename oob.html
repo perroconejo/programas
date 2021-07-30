@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product app</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/cyborg/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="/" class= "navbar-brand">
+         Product App
+        </a>
+    </nav>
+    <div class="contenido">
+     <!--aplicacion-->
+        <div id="app" class="row pt-4">
+            <div class="col-md-4">
+                <div class="tarjeta">
+                    <div class="cabeza-card">
+                    <h4>Agrega un prodructo</h4>
+                    </div>
+                    <form id="formu-del-product" class="cuerpo-card">
+                        <div class="form-group">
+                            <input type="text" id="nombre" placeholder="Nombre del Prodcto" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" step="0.01" id="precio" placeholder="Precio del Producto" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="number"  id="vencimiento" min="2017" max="2035" value="2020" placeholder=" año de vencimiento" class="form-control">
+                        </div>
+                        <input type="submit" value="Guardar" class="btn btn-success btn-block">
+                    </form>
+                </div>
+             </div>
+            <div class="col-md-8" id="lista-producto">
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
